@@ -1,4 +1,5 @@
 import numpy as np
+import cv2
 
 class Agente_Filtro_Gauss:
     def __init__(self):

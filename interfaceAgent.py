@@ -1,13 +1,15 @@
-import cropAgent as Agente_Crop
-import normalizeAgent as Agente_Normalizador
-import shuffleAgent as Agente_Divisor
-import grayAgent as Agente_Gray
+from cropAgent import Agente_Crop
+from normalizeAgent import Agente_Normalizador
+from shuffleAgent import Agente_Divisor
+from grayAgent import Agente_Gray
 
 class Agente_Interface:
-    def __init__(self):
+    def __init__(self, folder_dir):
         print("Iniciando pre processamento das imagens")
+        self.folder_dir = folder_dir
+
     def processamento(self, path, cinza=False, size=(256,256,3), split=0.75, embaralhar = True):
-        folder_dir = 'imagens/DIV2K_train_HR/DIV2K_train_HR'
+        folder_dir = self.folder_dir
 
         agente_crop = Agente_Crop(size=size)
         if cinza:
