@@ -5,7 +5,7 @@ class Agente_Divisor:
         if not 0.0 < split < 1.0:
              raise ValueError("A proporção deve ser um valor maior que 0 e menor que 1.")
         self.split = split
-        print(f"Agente de Divisão inicializado. Proporção de Treinamento: {self.split* 100:.0f}%")
+        print(f"Agente Split inicializado. Proporção de Treinamento: {self.split* 100:.0f}%")
     def dividir_dado(self, dado, embaralhar = True):
         div = int(dado.shape[0]*self.split)
         dados_embaralhados = dado.copy()
