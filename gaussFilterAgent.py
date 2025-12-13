@@ -1,7 +1,7 @@
 import numpy as np
 import cv2
 
-class Agente_Filtro_Gauss:
+class AgentgGaussFilter:
     def __init__(self):
         print("Iniciando o Agente de Filtragrem")
     def filtragem(self, dado, kernel = 5):

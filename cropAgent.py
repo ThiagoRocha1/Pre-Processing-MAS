@@ -4,7 +4,7 @@ import numpy as np
 from PIL import Image
 
 
-class Agente_Crop:
+class AgentCrop:
     def __init__(self, size = (256, 256, 3)):
         self.size = size
         print("Agente Crop iniciado")

@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-class Agente_Filtro_Median:
+class AgentMedianFilter:
     def __init__(self):
         print("Iniciando o Agente de Filtragrem")
     def filtragem(self, dado):

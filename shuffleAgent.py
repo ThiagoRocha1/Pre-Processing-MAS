@@ -1,6 +1,6 @@
 import numpy as np
 
-class Agente_Divisor:
+class AgentSplit:
     def __init__(self, split = 0.75):
         if not 0.0 < split < 1.0:
              raise ValueError("A proporção deve ser um valor maior que 0 e menor que 1.")

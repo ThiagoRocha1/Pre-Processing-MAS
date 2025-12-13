@@ -1,4 +1,4 @@
-class Agente_Normalizador:
+class AgentNormalize:
     def __init__(self):
         print("Agente Normalizador iniciado")
     def normalizar_imagem(self, dado):

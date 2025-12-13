@@ -1,7 +1,7 @@
 import numpy as np
 import cv2
 
-class Agente_Gray:
+class AgentGray:
     def __init__(self):
         print("Agente Grayscale iniciado")
     def grayscale(self, dado):
